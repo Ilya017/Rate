@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monitors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .slideshow {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+        animation: slideshow 36s ease-in-out infinite;
+    }
+
+    @keyframes slideshow {
+        from {
+            opacity: 0;
+            filter: grayscale(100%);
+        }
+
+        5% {
+            opacity: 1;
+            filter: grayscale(50%);
+        }
+
+        10% {
+            opacity: 1;
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+
+        15% {
+            opacity: 1;
+            filter: blur(0);
+        }
+
+        20% {
+            opacity: 0;
+            filter: blur(2px);
+            transform: scale(0.9);
+        }
+
+        25% {
+            opacity: 0;
+        }
+    }
+
+    .slideshow .i_1 {
+        animation-delay: 6s;
+    }
+
+    .slideshow .i_2 {
+        animation-delay: 12s;
+    }
+
+    .slideshow .i_3 {
+        animation-delay: 18s;
+    }
+
+    .slideshow .i_4 {
+        animation-delay: 24s;
+    }
+
+    .slideshow .i_5 {
+        animation-delay: 30s;
+    }
+
+    .slideshow .i_6 {
+        animation-delay: 36s;
+    }
+
+    p {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #675bb3;
+        text-shadow: 0 0 1px #000;
+        text-transform: uppercase;
+        font-size: 2.8em;
+        opacity: 0;
+        animation: title 36s linear infinite;
+    }
+
+    @keyframes title {
+        from {
+            opacity: 0;
+        }
+
+        5% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        25% {
+            opacity: 0;
+        }
+    }
+
+    .slideshow .p_1 {
+        animation-delay: 7s;
+    }
+
+    .slideshow .p_2 {
+        animation-delay: 13s;
+    }
+
+    .slideshow .p_3 {
+        animation-delay: 19s;
+    }
+
+    .slideshow .p_4 {
+        animation-delay: 25s;
+    }
+
+    .slideshow .p_5 {
+        animation-delay: 31s;
+    }
+
+    .slideshow .p_6 {
+        animation-delay: 37s;
+    }
+</style>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <div id="wrap">
+        <a name="top"></a>
+        <a href="#down">Вниз</a>
+        <div id="nav2">
+            <ul>
+                <li><a href="index.html">Процессоры</a></li>
+                <li><a href="cards.html">Видеокарты</a></li>
+                <li><a href="blocks.html">БП</a></li>
+                <li><a href="ssd.html">SSD</a></li>
+                <li><a href="plats.html">МП</a></li>
+            </ul>
+            <div class="form"><a href="log.html">Вход</a></div>
+        </div>
+        <br>
+        <div id="header">
+            <h1>Рейтинг лучших мониторов 2021</h1>
+        </div>
+        <div class="slideshow">
+            <img src="images/11.png" alt="#" class="i_1">
+            <p class="p_1">LG ULTRA GEAR GAMING</p>
+            <img src="images/12.jpeg" alt="#" class="i_2">
+            <p class="p_2">IIYAMA PRO LITE</p>
+            <img src="images/13.jpg" alt="#" class="i_3">
+            <p class="p_3">MSI GAMING X</p>
+            <img src="images/14.jpg" alt="#" class="i_4">
+            <p class="p_4">SAMSUNG CURVED GAME</p>
+            <img src="images/15.jpg" alt="#" class="i_5">
+            <p class="p_5">ASUS EYE CARE</p>
+            <img src="images/16.jpg" alt="#" class="i_6">
+            <p class="p_6">MSI CURVED GAMING</p>
+        </div>
+        <div id="footer">
+            <h1>&copy;Илья Комареус 2020</h1>
+            <div class="form2"><a href="connect.html">Обратная связь</a></div>
+            <a name="down"></a>
+            <a href="#top">Наверх</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>LOG IN FORM</title>
+    <style>
+        body {
+            background: #222;
+        }
+
+        @font-face {
+            font-family: "Clickuper";
+            src: url("fonts/font.ttf");
+        }
+
+        h1 {
+            font-family: 'Clickuper', cursive;
+            font-size: 20px;
+        }
+
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            background: #e0e0e0;
+            z-index: 1001;
+        }
+
+        .preloader__image {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-top: -35px;
+            margin-left: -35px;
+            text-align: center;
+            animation: preloader-rotate 2s infinite linear;
+        }
+
+        @keyframes preloader-rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .loaded_hiding .preloader {
+            transition: 2s opacity;
+            opacity: 0;
+        }
+
+        .loaded .preloader {
+            display: none;
+        }
+
+        .Myform {
+            width: 400px;
+            height: 500px;
+            background: #282830;
+            border-radius: 10px;
+            margin: 10% auto;
+            box-shadow: 2px 2px 4px 0px #000000;
+        }
+
+        .Myform h1 {
+            margin: 0;
+            background-color: #282830;
+            border-radius: 10px 10px 0 0;
+            color: #fff;
+            font-size: 14px;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .inp {
+            padding: 20px;
+        }
+
+        .log {
+            border: 2px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 335px;
+            height: 40px;
+            border-radius: 5px 5px 0 0;
+            background-color: #282830;
+            color: white;
+            font-family: 'Clickuper', cursive;
+        }
+
+        .pass {
+            border: 2px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 335px;
+            height: 40px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: #282830;
+            color: white;
+            font-family: 'Clickuper', cursive;
+        }
+
+        .email {
+            border: 2px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 335px;
+            height: 40px;
+            background-color: #282830;
+            color: white;
+            font-family: 'Clickuper', cursive;
+        }
+
+        .tel {
+            border: 2px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 335px;
+            height: 40px;
+            background-color: #282830;
+            color: white;
+            font-family: 'Clickuper', cursive;
+        }
+
+        .date {
+            border: 2px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 335px;
+            height: 40px;
+            background-color: #282830;
+            color: white;
+            font-family: 'Clickuper', cursive;
+        }
+
+        .btn {
+            background: white;
+            border-radius: 15px 15px 15px 15px;
+            color: black;
+            float: right;
+            width: 360px;
+            height: 60px;
+            font-weight: bold;
+            margin: 8px;
+            margin-right: 2px;
+            margin-left: 18px;
+            padding: 12px 20px;
+            font-family: 'Clickuper', cursive;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn2 {
+            background: white;
+            border-radius: 15px 15px 15px 15px;
+            color: black;
+            width: 80px;
+            height: 25px;
+            top: 15px;
+            font-weight: bold;
+            font-family: 'Clickuper', cursive;
+            position: fixed;
+            text-align: center;
+        }
+
+        .btn2:hover {
+            background: black;
+            border-radius: 15px 15px 15px 15px;
+            color: white;
+            width: 80px;
+            height: 25px;
+            top: 15px;
+            font-weight: bold;
+            font-family: 'Clickuper', cursive;
+            position: fixed;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }
+
+                , 500);
+        }
+
+    </script>
+    <div class="btn2"><a href="index.html">Назад</a></div>
+    <div class="Myform">
+        <h1>LOG IN FORM</h1>
+        <div class="inp">
+            <form name="regisrration" action="page2.html" method="post">
+                <input class="log" type="text" name="login" placeholder="LOGIN" pattern="[A-Za-z]{6,}">
+                <input class="email" type="email" name="email" placeholder="Email">
+                <input class="tel" name="tel" type="tel" pattern="^((8|\+380)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                    value="+380" maxlength="13" placeholder="PHONE NUMBER">
+                <input class="date" type="date" />
+                <input class="pass" type="password" name="password" placeholder="PASSWORD" maxlength="12"
+                    pattern="[A-Za-z]{6,}">
+                <input class="btn" type="submit" value="LOG IN">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

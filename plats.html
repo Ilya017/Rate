@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #gall {
+        position: relative;
+        padding-top: 50%;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    #gall img {
+        position: absolute;
+        top: 25%;
+        left: 12.5%;
+        max-width: 24.5%;
+        max-height: 49.5%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        cursor: zoom-in;
+        transition: .2s;
+    }
+
+    #gall img:nth-child(4n-2) {
+        left: 37.5%;
+    }
+
+    #gall img:nth-child(4n-1) {
+        left: 62.5%;
+    }
+
+    #gall img:nth-child(4n) {
+        left: 87.5%;
+    }
+
+    #gall img:nth-child(n+5) {
+        top: 75%;
+    }
+
+    #gall img:nth-child(n+6) {
+        top: 57.5%;
+    }
+
+    #gall img:nth-child(n+6) {
+        top: 75%;
+    }
+
+    #gall img:nth-child(n+6) {
+        top: 75%;
+    }
+
+    #gall img:nth-child(n+6) {
+        top: 75%;
+    }
+
+    #gall img:focus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        width: 900px;
+        height: 900px;
+        outline: none;
+        pointer-events: none;
+    }
+
+    #gall img:focus~div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #222;
+        cursor: zoom-out;
+    }
+
+    .video {
+        margin-left: 370px;
+    }
+</style>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <div id="wrap">
+        <a name="top"></a>
+        <a href="#down">Вниз</a>
+        <div id="nav2">
+            <ul>
+                <li><a href="index.html">Процессоры</a></li>
+                <li><a href="cards.html">Видеокарты</a></li>
+                <li><a href="blocks.html">БП</a></li>
+                <li><a href="ssd.html">SSD</a></li>
+                <li><a href="monitor.html">Мониторы</a></li>
+            </ul>
+            <div class="form"><a href="log.html">Вход</a></div>
+        </div>
+        <br>
+        <div id="header">
+            <h1>Рейтинг лучших материнских плат 2021</h1>
+        </div>
+        <div id="gall">
+            <img src="images/1.jpg" tabindex="0" border="3" />
+            <img src="images/2.jpg" tabindex="0" border="3" />
+            <img src="images/4.jpeg" tabindex="0" border="3" />
+            <img src="images/5.jpg" tabindex="0" border="3" />
+            <img src="images/6.jpg" tabindex="0" border="3" />
+            <img src="images/8.jpg" tabindex="0" border="3" />
+            <img src="images/9.jpg" tabindex="0" border="3" />
+            <img src="images/10.png" tabindex="0" border="3" />
+            <div></div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391243.3898411729!2d115.51923369239819!3d39.99528962753833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f069d0e2a0d0db%3A0x30076dd69ae5de28!2z0JzRjdC90YzRgtC-0YPQs9C-0YMsINCf0LXQutC40L0sINCa0LjRgtCw0Lk!5e0!3m2!1sru!2sua!4v1613763373188!5m2!1sru!2sua"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        <iframe class="video" width="600" height="450" src="https://www.youtube.com/embed/mydqpXUXFnQ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div id="footer">
+            <h1>&copy;Илья Комареус 2020</h1>
+            <div class="form2"><a href="connect.html">Обратная связь</a></div>
+            <a name="down"></a>
+            <a href="#top">Наверх</a>
+        </div>
+    </div>
+</body>
+
+</html>
